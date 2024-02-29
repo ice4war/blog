@@ -1,0 +1,22 @@
+<div class="new-edit-form ">
+<%= form_with model: article do |form| %>
+		<%= form.label :title, "Title :" %>
+		<%= form.text_field :title %></br>
+		<% article.errors.full_messages_for(:title).each do |message| %>
+			<div><%= message %></div>
+		<%end%>
+		<%= form.label :body, "Content :"%></br>
+		<%= form.text_area :body %></br>
+		<% article.errors.full_messages_for(:body) do |message| %>
+			<div><%= message %></div>
+		<% end %>
+
+
+		<%= form.label :status, "Status :" %>
+		<%= form.select :status, Visible::VALID_STATUSES, selected: article.status || 'public' %></br>
+
+
+		<%= form.submit %>
+		<%= link_to "Cancel", articles_path %>
+<% end %>
+</div>

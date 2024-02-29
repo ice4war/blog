@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	text-align: center;
+	background-color: aliceblue;
+	min-height: 100vh;
+}
+h1,h2{
+	color: #77adad;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.comments {
+	text-align: left;
+	padding: 10px;
+	background-color: #fff;
+}
+.comment p{
+	font-size: 1rem;
+}
+.comment {
+	padding: 10px;
+	border: 15px;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	background-color: aliceblue;
+}
+p{
+	color: #66ee;
+	font-size: 1.5rem;
+
+}
+
+ul{
+	list-style-type: none;
+	columns: 3 400px;
+}
+.article-list{
+/* 	border: .5px dashed red; */
+	margin: 2px 25px 0 0;
+}
+.article-container{
+	min-height: 100px;
+	max-height: 200px;
+	overflow: hidden;
+	background-color: #aeaeeaae;
+	margin-bottom: 10px;
+	padding: 1rem;
+	display: flow-root;
+	border: 12px;
+	border-radius: 12px;
+
+}
+a {
+	color: #3377eedd;
+	text-decoration: none;
+	font-size: 1em;
+}
+span {
+	padding: 5px;
+}
+span a{
+	font-size: 2rem;
+	color: #2266cc;
+}
+a:hover,a:active{
+		color: #2266cccc;
+}
+a:visited{	color: #2266aa;}
+
+.comment-form,.new-edit-form{
+	text-align: start;
+	background-color: #d6eaec;
+	width: 70%;
+	border: 15px;
+	border-radius: 15px;
+	position: absolute;
+	left: 15%;
+	right: 15%;
+	padding:20px;
+}
